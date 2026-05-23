@@ -1,16 +1,17 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[58] = {
-  "index": 59,
+window.PREZI_MORPH_SLIDES[60] = {
+  "index": 61,
   "objects": [
     {
-      "key": "!!chatgpt_ex",
+      "key": "!!example_ex_scene",
       "src": "assets/chatgpt_ex.png",
       "name": "ChatGPT example",
       "x": 0,
       "y": 0,
       "w": 1,
       "h": 1,
-      "z": 1
+      "z": 1,
+      "exitTo": { "x": -0.035, "y": 0, "w": 1, "h": 1 }
     }
   ]
 };

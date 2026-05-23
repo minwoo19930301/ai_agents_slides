@@ -48,6 +48,8 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-42-how-to-vm.js",
     "slides/slide-43-moltbook.js",
     "slides/slide-44-what-i-did.js",
+    "slides/slide-45-multiagent.js",
+    "slides/slide-46-discord.js",
     "slides/slide-45-hermes.js",
     "slides/slide-46-hermes-vs-openclaw.js",
     "slides/slide-47-hermes-how-left.js",

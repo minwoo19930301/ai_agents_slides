@@ -1,11 +1,11 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[58] = {
-  "index": 59,
+window.PREZI_MORPH_SLIDES[45] = {
+  "index": 46,
   "objects": [
     {
-      "key": "!!afk",
-      "kind": "afk-morph",
-      "name": "AFK expands to Away From Keyboard",
+      "key": "!!discord_image",
+      "src": "assets/discord.png",
+      "name": "Discord example",
       "x": 0,
       "y": 0,
       "w": 1,

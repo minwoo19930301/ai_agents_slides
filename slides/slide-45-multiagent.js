@@ -1,11 +1,11 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[58] = {
-  "index": 59,
+window.PREZI_MORPH_SLIDES[44] = {
+  "index": 45,
   "objects": [
     {
-      "key": "!!afk",
-      "kind": "afk-morph",
-      "name": "AFK expands to Away From Keyboard",
+      "key": "!!multiagent_image",
+      "src": "assets/multiagent.png",
+      "name": "Multi-agent overview",
       "x": 0,
       "y": 0,
       "w": 1,

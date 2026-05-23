@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[57] = {
-  "index": 58,
+window.PREZI_MORPH_SLIDES[59] = {
+  "index": 60,
   "objects": [
     {
       "key": "!!afk_ex_image",
