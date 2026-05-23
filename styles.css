@@ -80,6 +80,7 @@ body { display: grid; place-items: center; }
 .overall-services-cover-scene,
 .video-pair-scene,
 .afk-morph-scene,
+.afk-command-flow-scene,
 .multi-hotlink-scene {
   background: transparent;
   overflow: visible;
@@ -110,7 +111,8 @@ body { display: grid; place-items: center; }
 .overall-services-mask-scene,
 .overall-services-cover-scene,
 .video-pair-scene,
-.afk-morph-scene {
+.afk-morph-scene,
+.afk-command-flow-scene {
   pointer-events: none;
 }
 .hotlink-scene,
@@ -1558,6 +1560,67 @@ body { display: grid; place-items: center; }
     46% { gap: 28px; transform: scale(1.06); }
     100% { gap: 14px; transform: scale(1); }
   }
+}
+.afk-command-flow-scene {
+  overflow: hidden;
+}
+.afk-device-pulse {
+  position: absolute;
+  width: 7.4%;
+  height: 10.4%;
+  border: 3px solid currentColor;
+  border-radius: 24px;
+  opacity: 0;
+  filter: drop-shadow(0 0 12px currentColor);
+  animation: afk-device-pulse 1800ms ease-out infinite;
+}
+.afk-phone-pulse { left: 8.8%; color: #2478ff; }
+.afk-api-pulse { left: 38.9%; width: 15.8%; height: 16%; color: #2478ff; animation-delay: 380ms; }
+.afk-computer-pulse { left: 65.4%; width: 22.7%; height: 21.8%; color: #2478ff; animation-delay: 760ms; }
+.afk-top { top: 14.9%; }
+.afk-mid { top: 45.8%; }
+.afk-bottom { top: 76.1%; }
+.afk-mid.afk-phone-pulse,
+.afk-mid.afk-api-pulse,
+.afk-mid.afk-computer-pulse { color: #00a968; }
+.afk-bottom.afk-phone-pulse,
+.afk-bottom.afk-api-pulse,
+.afk-bottom.afk-computer-pulse { color: #ff5b1a; }
+.afk-command-packet {
+  position: absolute;
+  width: 3.2%;
+  height: 2.1%;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow: 0 0 16px currentColor, 0 0 34px currentColor;
+  opacity: 0;
+}
+.afk-blue { color: #2478ff; }
+.afk-green { color: #00a968; }
+.afk-orange { color: #ff5b1a; }
+.afk-leg-a { left: 18.5%; animation: afk-flow-a 1350ms linear infinite; }
+.afk-leg-b { left: 52.9%; animation: afk-flow-b 1350ms linear 430ms infinite; }
+.afk-command-packet.afk-top { top: 20.6%; }
+.afk-command-packet.afk-mid { top: 52.6%; animation-delay: 170ms; }
+.afk-command-packet.afk-bottom { top: 84.4%; animation-delay: 340ms; }
+.afk-command-packet.afk-leg-b.afk-mid { animation-delay: 600ms; }
+.afk-command-packet.afk-leg-b.afk-bottom { animation-delay: 770ms; }
+@keyframes afk-device-pulse {
+  0% { opacity: 0; transform: scale(.92); }
+  18% { opacity: .65; }
+  100% { opacity: 0; transform: scale(1.16); }
+}
+@keyframes afk-flow-a {
+  0% { left: 18.5%; opacity: 0; transform: scale(.75); }
+  10% { opacity: .95; }
+  82% { opacity: .95; }
+  100% { left: 32.6%; opacity: 0; transform: scale(1); }
+}
+@keyframes afk-flow-b {
+  0% { left: 52.9%; opacity: 0; transform: scale(.75); }
+  10% { opacity: .95; }
+  82% { opacity: .95; }
+  100% { left: 61.8%; opacity: 0; transform: scale(1); }
 }
 .iframe-bar {
   display: flex;

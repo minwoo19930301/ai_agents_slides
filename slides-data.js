@@ -60,6 +60,7 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-54-apps.js",
     "slides/slide-55-use-computer.js",
     "slides/slide-57-videos.js",
-    "slides/slide-58-afk.js"
+    "slides/slide-58-afk.js",
+    "slides/slide-59-afk-ex.js"
   ]
 };
