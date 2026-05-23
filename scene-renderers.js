@@ -311,6 +311,18 @@ window.PREZI_SCENES = {
       `;
     }
 
+    if (obj.kind === 'afk-morph') {
+      return `
+        <div class="afk-stage" aria-label="AFK, Away From Keyboard">
+          <div class="afk-wordmark">
+            <span class="afk-word afk-away"><span class="afk-initial">A</span><span class="afk-rest">way</span></span>
+            <span class="afk-word afk-from"><span class="afk-initial">F</span><span class="afk-rest">rom</span></span>
+            <span class="afk-word afk-keyboard"><span class="afk-initial">K</span><span class="afk-rest">eyboard</span></span>
+          </div>
+        </div>
+      `;
+    }
+
     if (obj.kind === 'html-result') {
       const url = escapeHtml(obj.url);
       const label = escapeHtml(obj.label || 'HTML response');
