@@ -325,21 +325,15 @@ window.PREZI_SCENES = {
 
     if (obj.kind === 'afk-command-flow') {
       return `
-        <span class="afk-device-pulse afk-phone-pulse afk-top"></span>
-        <span class="afk-device-pulse afk-api-pulse afk-top"></span>
-        <span class="afk-device-pulse afk-computer-pulse afk-top"></span>
-        <span class="afk-device-pulse afk-phone-pulse afk-mid"></span>
-        <span class="afk-device-pulse afk-api-pulse afk-mid"></span>
-        <span class="afk-device-pulse afk-computer-pulse afk-mid"></span>
-        <span class="afk-device-pulse afk-phone-pulse afk-bottom"></span>
-        <span class="afk-device-pulse afk-api-pulse afk-bottom"></span>
-        <span class="afk-device-pulse afk-computer-pulse afk-bottom"></span>
-        <span class="afk-command-packet afk-blue afk-leg-a afk-top"></span>
-        <span class="afk-command-packet afk-blue afk-leg-b afk-top"></span>
-        <span class="afk-command-packet afk-green afk-leg-a afk-mid"></span>
-        <span class="afk-command-packet afk-green afk-leg-b afk-mid"></span>
-        <span class="afk-command-packet afk-orange afk-leg-a afk-bottom"></span>
-        <span class="afk-command-packet afk-orange afk-leg-b afk-bottom"></span>
+        <span class="afk-command-bubble afk-blue afk-row-top"><b>명령:</b> OpenClaw 켜줘</span>
+        <span class="afk-command-bubble afk-green afk-row-mid"><b>명령:</b> 코드 작업 실행</span>
+        <span class="afk-command-bubble afk-orange afk-row-bottom"><b>명령:</b> 데스크톱 제어</span>
+        <span class="afk-signal afk-blue afk-leg-a afk-row-top"></span>
+        <span class="afk-signal afk-blue afk-leg-b afk-row-top"></span>
+        <span class="afk-signal afk-green afk-leg-a afk-row-mid"></span>
+        <span class="afk-signal afk-green afk-leg-b afk-row-mid"></span>
+        <span class="afk-signal afk-orange afk-leg-a afk-row-bottom"></span>
+        <span class="afk-signal afk-orange afk-leg-b afk-row-bottom"></span>
       `;
     }
 
