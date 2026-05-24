@@ -6,7 +6,7 @@ const manifest = window.PREZI_MORPH_DATA;
 const slideFiles = manifest.slideFiles;
 const slideCount = slideFiles.length;
 const duration = 1000;
-const assetVersion = '20260524-restore-json-flow-slides';
+const assetVersion = '20260524-morph-json-db-zoom';
 const autoAdvanceMap = new Map([
   [2, 3],
   [4, 5],

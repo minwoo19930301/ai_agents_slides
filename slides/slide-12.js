@@ -3,14 +3,14 @@ window.PREZI_MORPH_SLIDES[15] = {
   "index": 16,
   "objects": [
     {
-      "key": "!!web_scene_image",
-      "name": "!!web_scene_image",
-      "descr": "JSON request illustration",
-      "src": "assets/res_html.png",
-      "x": 0,
-      "y": 0,
-      "w": 1,
-      "h": 1,
+      "key": "!!canvas",
+      "name": "!!canvas",
+      "descr": "tech_architecture_flow_diagram_illustration.png",
+      "src": "assets/image1.png",
+      "x": 8.202099737532809e-08,
+      "y": -0.0002658209390492855,
+      "w": 0.9999999179790027,
+      "h": 1.000531496062992,
       "z": 1
     },
     {
