@@ -694,55 +694,22 @@ body { display: grid; place-items: center; }
 }
 .dns-cloud-card {
   position: absolute;
-  left: 38.7%;
-  top: 25.2%;
-  width: 12.5%;
-  height: 13.8%;
-  color: #225bd8;
+  left: 34.2%;
+  top: 28.8%;
+  width: 11.8%;
+  height: auto;
   filter: drop-shadow(0 14px 22px rgba(38, 95, 218, .18));
   opacity: 0;
   transform: translateY(8px) scale(.96);
   animation: fade-rise 560ms var(--ease) 120ms both;
 }
-.dns-cloud-card::before {
-  content: "";
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  bottom: 8%;
-  height: 52%;
-  border: 2px solid rgba(70, 123, 236, .62);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .9);
-}
-.dns-cloud-bubble {
-  position: absolute;
-  border: 2px solid rgba(70, 123, 236, .62);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .92);
-}
-.dns-cloud-bubble.b1 { left: 16%; top: 21%; width: 34%; height: 48%; }
-.dns-cloud-bubble.b2 { left: 36%; top: 10%; width: 38%; height: 58%; }
-.dns-cloud-bubble.b3 { left: 59%; top: 27%; width: 29%; height: 43%; }
-.dns-cloud-card strong {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 49%;
-  z-index: 1;
-  text-align: center;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: clamp(10px, 1vw, 17px);
-  font-weight: 900;
-  letter-spacing: 0;
-}
 .dns-domain {
-  top: 35.7%;
+  top: 45.4%;
   font-size: clamp(13px, 1.15vw, 18px);
   animation-delay: 220ms;
 }
 .dns-ip {
-  top: 49.4%;
+  top: 53.2%;
   font-size: clamp(11px, .95vw, 15px);
   animation-delay: 650ms;
 }

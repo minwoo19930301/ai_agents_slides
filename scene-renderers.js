@@ -136,12 +136,7 @@ window.PREZI_SCENES = {
       const domain = escapeHtml(obj.domain || obj.url || '');
       const ip = escapeHtml(obj.ip);
       return `
-        <div class="dns-cloud-card">
-          <span class="dns-cloud-bubble b1"></span>
-          <span class="dns-cloud-bubble b2"></span>
-          <span class="dns-cloud-bubble b3"></span>
-          <strong>DNS</strong>
-        </div>
+        <img class="dns-cloud-card" src="assets/dns-cloud-reuse.png" alt="">
         <div class="dns-domain">${domain}</div>
         <div class="dns-ip">${ip}</div>
       `;

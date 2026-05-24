@@ -7,10 +7,10 @@ window.PREZI_MORPH_SLIDES[21] = {
       "name": "!!canvas",
       "descr": "tech_architecture_flow_diagram_illustration.png",
       "src": "assets/image1.png",
-      "x": -1.34,
-      "y": -0.72,
-      "w": 2.35,
-      "h": 2.35,
+      "x": -1.15,
+      "y": -0.62,
+      "w": 2.15,
+      "h": 2.15,
       "z": 1
     },
     {
