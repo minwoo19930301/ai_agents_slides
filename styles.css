@@ -494,9 +494,9 @@ body { display: grid; place-items: center; }
   animation: token-self-spin 1150ms linear infinite;
 }
 .key3d {
-  right: 10%;
-  top: 4%;
-  width: 28%;
+  left: 41%;
+  top: -38%;
+  width: 22%;
   animation: key-self-spin 1250ms linear infinite;
 }
 .token3d-coin svg,
@@ -506,7 +506,7 @@ body { display: grid; place-items: center; }
   height: auto;
 }
 .key3d img {
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 .json-spin-label {
   position: absolute;
@@ -518,7 +518,12 @@ body { display: grid; place-items: center; }
   letter-spacing: 0;
 }
 .token-label-3d { left: 6%; }
-.key-label-3d { right: 15%; }
+.key-label-3d {
+  left: 40%;
+  right: auto;
+  top: 1%;
+  bottom: auto;
+}
 @keyframes token-self-spin {
   0% { transform: rotateY(0deg) rotateX(3deg); }
   25% { transform: rotateY(90deg) rotateX(3deg) scaleX(.62); }

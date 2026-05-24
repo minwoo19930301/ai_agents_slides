@@ -6,7 +6,7 @@ const manifest = window.PREZI_MORPH_DATA;
 const slideFiles = manifest.slideFiles;
 const slideCount = slideFiles.length;
 const duration = 1000;
-const assetVersion = '20260525-api-overlays-key-brain-shift';
+const assetVersion = '20260525-transparent-key';
 const autoAdvanceMap = new Map([
   [2, 3],
   [4, 5],
