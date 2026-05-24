@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[16] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "DNS resolution illustration",
-      "src": "assets/res_dns.png",
+      "descr": "API bot DNS illustration",
+      "src": "assets/image_bot.png",
       "x": 0,
       "y": 0,
       "w": 1,

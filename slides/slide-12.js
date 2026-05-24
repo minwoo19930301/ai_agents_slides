@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[15] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "JSON request illustration",
-      "src": "assets/res_html.png",
+      "descr": "API bot request illustration",
+      "src": "assets/image_bot.png",
       "x": 0,
       "y": 0,
       "w": 1,

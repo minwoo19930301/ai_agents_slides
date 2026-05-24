@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[17] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "SQL request illustration",
-      "src": "assets/res_sql.png",
+      "descr": "API bot SQL illustration",
+      "src": "assets/image_bot.png",
       "x": 0,
       "y": 0,
       "w": 1,
