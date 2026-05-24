@@ -51,12 +51,46 @@ window.PREZI_SCENES = {
     if (obj.kind === 'token-burst') {
       return `
         <div class="json-spin-stage">
-          <span class="token3d-coin"><span>1</span></span>
+          <span class="token3d-coin">
+            <svg viewBox="0 0 160 160" aria-hidden="true">
+              <defs>
+                <radialGradient id="coinFace" cx="30%" cy="24%" r="76%">
+                  <stop offset="0" stop-color="#fff6b8"/>
+                  <stop offset=".32" stop-color="#ffd95c"/>
+                  <stop offset=".62" stop-color="#d99719"/>
+                  <stop offset="1" stop-color="#7b4b05"/>
+                </radialGradient>
+                <linearGradient id="coinEdge" x1="0" x2="1">
+                  <stop offset="0" stop-color="#6c4100"/>
+                  <stop offset=".18" stop-color="#f7d764"/>
+                  <stop offset=".45" stop-color="#a76705"/>
+                  <stop offset=".72" stop-color="#ffeb84"/>
+                  <stop offset="1" stop-color="#6c4100"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="83" cy="80" rx="66" ry="70" fill="url(#coinEdge)"/>
+              <circle cx="73" cy="80" r="62" fill="url(#coinFace)"/>
+              <circle cx="73" cy="80" r="45" fill="none" stroke="#fff0a4" stroke-width="4" opacity=".72"/>
+              <rect x="68" y="43" width="11" height="74" rx="5" fill="#a46505"/>
+              <rect x="72" y="43" width="5" height="74" rx="3" fill="#ffe27b"/>
+              <path d="M35 42c18-22 57-30 87-6" fill="none" stroke="#fff9c8" stroke-width="5" opacity=".5"/>
+            </svg>
+          </span>
           <span class="key3d">
-            <i class="key3d-ring"></i>
-            <i class="key3d-stem"></i>
-            <i class="key3d-tooth key3d-tooth-a"></i>
-            <i class="key3d-tooth key3d-tooth-b"></i>
+            <svg viewBox="0 0 120 190" aria-hidden="true">
+              <defs>
+                <linearGradient id="keyFace" x1="0" x2="1">
+                  <stop offset="0" stop-color="#020617"/>
+                  <stop offset=".46" stop-color="#111827"/>
+                  <stop offset=".58" stop-color="#6b7280"/>
+                  <stop offset="1" stop-color="#020617"/>
+                </linearGradient>
+              </defs>
+              <path d="M58 4c28 0 50 22 50 50 0 21-13 39-31 46v82H47V100C29 93 16 75 16 54 16 26 38 4 58 4Z" fill="url(#keyFace)"/>
+              <circle cx="75" cy="28" r="13" fill="#fff"/>
+              <path d="M46 94h23v24H46zm23 30h22v16H69zm0 26h16v16H69z" fill="#020617"/>
+              <path d="M53 100h5v74" stroke="#6b7280" stroke-width="4" opacity=".55"/>
+            </svg>
           </span>
           <span class="json-spin-label token-label-3d">TOKEN</span>
           <span class="json-spin-label key-label-3d">KEY</span>

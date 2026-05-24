@@ -3,10 +3,10 @@ window.PREZI_MORPH_SLIDES[17] = {
   "index": 18,
   "objects": [
     {
-      "key": "!!web_scene_image",
-      "name": "!!web_scene_image",
-      "descr": "SQL request illustration",
-      "src": "assets/res_sql.png",
+      "key": "!!canvas",
+      "name": "!!canvas",
+      "descr": "tech_architecture_flow_diagram_illustration.png",
+      "src": "assets/image1.png",
       "x": 0,
       "y": 0,
       "w": 1,
