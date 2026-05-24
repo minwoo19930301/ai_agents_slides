@@ -453,20 +453,22 @@ body { display: grid; place-items: center; }
   position: absolute;
   inset: 0;
   background: #fff;
+  display: grid;
+  place-items: center;
 }
 .last-loop-frame {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: contain;
 }
 .last-loop-a {
-  animation: last-loop-a 6s steps(1, end) infinite;
+  animation: last-loop-a 2s steps(1, end) infinite;
 }
 .last-loop-b {
   opacity: 0;
-  animation: last-loop-b 6s steps(1, end) infinite;
+  animation: last-loop-b 2s steps(1, end) infinite;
 }
 @keyframes last-loop-a {
   0%, 49.99% { opacity: 1; }

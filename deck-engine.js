@@ -6,7 +6,7 @@ const manifest = window.PREZI_MORPH_DATA;
 const slideFiles = manifest.slideFiles;
 const slideCount = slideFiles.length;
 const duration = 1000;
-const assetVersion = '20260524-token-key-last';
+const assetVersion = '20260524-limitless-future-last1s';
 const autoAdvanceMap = new Map([
   [2, 3],
   [4, 5],
