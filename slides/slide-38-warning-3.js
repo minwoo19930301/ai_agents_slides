@@ -1,11 +1,11 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[46] = {
-  "index": 47,
+window.PREZI_MORPH_SLIDES[37] = {
+  "index": 38,
   "objects": [
     {
-      "key": "!!discord_image",
-      "src": "assets/discord.png",
-      "name": "Discord example",
+      "key": "!!warning_3",
+      "src": "assets/warning_3.png",
+      "name": "Warning 3",
       "x": 0,
       "y": 0,
       "w": 1,

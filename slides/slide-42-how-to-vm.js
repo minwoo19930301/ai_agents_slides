@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[41] = {
-  "index": 42,
+window.PREZI_MORPH_SLIDES[42] = {
+  "index": 43,
   "objects": [
     {
       "key": "!!how_to_vm_image",

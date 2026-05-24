@@ -41,6 +41,7 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-35-telegram2.js",
     "slides/slide-36-openclaw-api.js",
     "slides/slide-37-openclaw-return.js",
+    "slides/slide-38-warning-3.js",
     "slides/slide-38-ban.js",
     "slides/slide-39-alternatives.js",
     "slides/slide-40-copow-talk.js",
@@ -69,6 +70,7 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-62-codex-ex2.js",
     "slides/slide-63-no-cli-api-mcp.js",
     "slides/slide-64-claude-seo.js",
-    "slides/slide-65-claude-download.js"
+    "slides/slide-65-claude-download.js",
+    "slides/slide-66-fake-ins.js"
   ]
 };

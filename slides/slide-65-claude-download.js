@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[65] = {
-  "index": 66,
+window.PREZI_MORPH_SLIDES[66] = {
+  "index": 67,
   "objects": [
     {
       "key": "!!claude_seo_base",
