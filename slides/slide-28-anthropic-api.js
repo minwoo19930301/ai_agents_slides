@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[30] = {
-  "index": 31,
+window.PREZI_MORPH_SLIDES[29] = {
+  "index": 30,
   "objects": [
     {
       "key": "!!anthropic_api_image",

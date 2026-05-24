@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[34] = {
-  "index": 35,
+window.PREZI_MORPH_SLIDES[33] = {
+  "index": 34,
   "objects": [
     {
       "key": "!!openclaw_macmini",

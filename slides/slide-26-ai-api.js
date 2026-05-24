@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[28] = {
-  "index": 29,
+window.PREZI_MORPH_SLIDES[27] = {
+  "index": 28,
   "objects": [
     {
       "key": "!!ai_api_image",

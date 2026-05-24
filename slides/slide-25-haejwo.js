@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[27] = {
-  "index": 28,
+window.PREZI_MORPH_SLIDES[26] = {
+  "index": 27,
   "objects": [
     {
       "key": "!!haejwo_image",

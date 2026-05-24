@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[70] = {
-  "index": 71,
+window.PREZI_MORPH_SLIDES[69] = {
+  "index": 70,
   "objects": [
     {
       "key": "!!section_gyeol",

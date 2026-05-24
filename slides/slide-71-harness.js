@@ -1,11 +1,11 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[70] = {
-  "index": 71,
+window.PREZI_MORPH_SLIDES[78] = {
+  "index": 79,
   "objects": [
     {
-      "key": "!!no_cli_api_mcp",
-      "src": "assets/no_cli_api_mcp.png",
-      "name": "No CLI API MCP",
+      "key": "!!harness",
+      "src": "assets/harness.png",
+      "name": "Harness",
       "x": 0,
       "y": 0,
       "w": 1,

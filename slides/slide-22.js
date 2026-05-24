@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[24] = {
-  "index": 25,
+window.PREZI_MORPH_SLIDES[23] = {
+  "index": 24,
   "objects": [
     {
       "key": "!!final_html_image",

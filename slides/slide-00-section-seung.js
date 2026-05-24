@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[31] = {
-  "index": 32,
+window.PREZI_MORPH_SLIDES[30] = {
+  "index": 31,
   "objects": [
     {
       "key": "!!section_seung",

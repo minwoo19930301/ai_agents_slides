@@ -24,7 +24,6 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-14.js",
     "slides/slide-15.js",
     "slides/slide-17-json-return.js",
-    "slides/slide-16.js",
     "slides/slide-17.js",
     "slides/slide-18.js",
     "slides/slide-20.js",
@@ -82,6 +81,8 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-67-dashboard-stack-1.js",
     "slides/slide-68-dashboard-stack-2.js",
     "slides/slide-69-dashboard-stack-3.js",
-    "slides/slide-70-dashboard-stack-4.js"
+    "slides/slide-70-dashboard-stack-4.js",
+    "slides/slide-71-harness.js",
+    "slides/slide-72-last-loop.js"
   ]
 };

@@ -50,12 +50,16 @@ window.PREZI_SCENES = {
 
     if (obj.kind === 'token-burst') {
       return `
-        <span class="json-token token-label">토큰</span>
-        <span class="json-token token-a">{</span>
-        <span class="json-token token-b">url</span>
-        <span class="json-token token-c">title</span>
-        <span class="json-token token-d">score</span>
-        <span class="json-token token-e">}</span>
+        <div class="json-orbit">
+          <span class="json-coin"><span>1</span></span>
+          <span class="json-key">
+            <i class="key-ring"></i>
+            <i class="key-stem"></i>
+            <i class="key-tooth key-tooth-a"></i>
+            <i class="key-tooth key-tooth-b"></i>
+          </span>
+          <span class="json-orbit-label">TOKEN / KEY</span>
+        </div>
       `;
     }
 
@@ -64,6 +68,15 @@ window.PREZI_SCENES = {
         <div class="dashboard-window-frame">
           <div class="dashboard-window-bar"><span></span><span></span><span></span></div>
           <img src="${escapeHtml(obj.src)}" alt="${escapeHtml(obj.name || 'dashboard')}">
+        </div>
+      `;
+    }
+
+    if (obj.kind === 'last-loop') {
+      return `
+        <div class="last-loop-wrap">
+          <img class="last-loop-frame last-loop-a" src="${escapeHtml(obj.srcA)}" alt="last">
+          <img class="last-loop-frame last-loop-b" src="${escapeHtml(obj.srcB)}" alt="last2">
         </div>
       `;
     }
