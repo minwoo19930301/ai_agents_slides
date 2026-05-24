@@ -84,6 +84,8 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-70-dashboard-stack-4.js",
     "slides/slide-71-harness.js",
     "slides/slide-72-limitless.js",
+    "slides/slide-73-stocks.js",
+    "slides/slide-74-volley-fire.js",
     "slides/slide-73-future.js",
     "slides/slide-72-last-loop.js"
   ]

@@ -54,6 +54,7 @@ body { display: grid; place-items: center; }
 .lesson-opening-scene,
 .lesson-agenda-scene,
 .section-divider-scene,
+.repo-cover-scene,
 .token-burst-scene,
 .dashboard-window-scene,
 .last-loop-scene,
@@ -99,6 +100,7 @@ body { display: grid; place-items: center; }
 .lesson-opening-scene,
 .lesson-agenda-scene,
 .section-divider-scene,
+.repo-cover-scene,
 .token-burst-scene,
 .dashboard-window-scene,
 .last-loop-scene,
@@ -290,6 +292,62 @@ body { display: grid; place-items: center; }
   0% { opacity: 0; transform: scale(.62); }
   72% { opacity: 1; transform: scale(1.08); }
   100% { opacity: 1; transform: scale(1); }
+}
+.repo-cover-scene {
+  place-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 72% 22%, rgba(47, 100, 214, .18), transparent 28%),
+    linear-gradient(135deg, #fbfdff, #f4f8ff 54%, #fff);
+}
+.repo-cover-scene p {
+  margin: 0 0 1vw;
+  color: #2f64d6;
+  font-size: clamp(20px, 1.7vw, 32px);
+  font-weight: 850;
+}
+.repo-cover-scene h1 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(72px, 7.6vw, 142px);
+  line-height: .95;
+  letter-spacing: 0;
+}
+.repo-cover-scene strong {
+  display: block;
+  margin-top: 1.35vw;
+  color: #334155;
+  font-size: clamp(28px, 2.8vw, 52px);
+  line-height: 1.15;
+}
+.repo-chart {
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  bottom: 12%;
+  height: 18%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: end;
+  gap: 2.2%;
+  opacity: .86;
+}
+.repo-chart span {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(180deg, #69a0ff, #2f64d6);
+  box-shadow: 0 14px 30px rgba(47, 100, 214, .18);
+  transform-origin: bottom;
+  animation: repo-bar-rise 760ms cubic-bezier(.16, .84, .2, 1) both;
+}
+.repo-chart span:nth-child(1) { height: 40%; animation-delay: 100ms; }
+.repo-chart span:nth-child(2) { height: 62%; animation-delay: 180ms; }
+.repo-chart span:nth-child(3) { height: 48%; animation-delay: 260ms; }
+.repo-chart span:nth-child(4) { height: 86%; animation-delay: 340ms; }
+.repo-chart span:nth-child(5) { height: 72%; animation-delay: 420ms; }
+@keyframes repo-bar-rise {
+  from { transform: scaleY(0); opacity: 0; }
+  to { transform: scaleY(1); opacity: 1; }
 }
 .json-orbit {
   position: absolute;

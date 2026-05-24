@@ -6,7 +6,7 @@ const manifest = window.PREZI_MORPH_DATA;
 const slideFiles = manifest.slideFiles;
 const slideCount = slideFiles.length;
 const duration = 1000;
-const assetVersion = '20260524-stable-json-flow-token-svg';
+const assetVersion = '20260524-repo-tail-slides';
 const autoAdvanceMap = new Map([
   [2, 3],
   [4, 5],

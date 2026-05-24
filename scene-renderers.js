@@ -48,6 +48,19 @@ window.PREZI_SCENES = {
       `;
     }
 
+    if (obj.kind === 'repo-cover') {
+      return `
+        <section class="repo-cover-scene">
+          <p>${escapeHtml(obj.kicker || 'GitHub')}</p>
+          <h1>${escapeHtml(obj.title || '')}</h1>
+          <strong>${escapeHtml(obj.subtitle || '')}</strong>
+          <div class="repo-chart" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </section>
+      `;
+    }
+
     if (obj.kind === 'token-burst') {
       return `
         <div class="json-spin-stage">
