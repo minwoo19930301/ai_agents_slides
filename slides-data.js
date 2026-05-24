@@ -78,6 +78,10 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-63-no-cli-api-mcp.js",
     "slides/slide-64-claude-seo.js",
     "slides/slide-65-claude-download.js",
-    "slides/slide-66-fake-ins.js"
+    "slides/slide-66-fake-ins.js",
+    "slides/slide-67-dashboard-stack-1.js",
+    "slides/slide-68-dashboard-stack-2.js",
+    "slides/slide-69-dashboard-stack-3.js",
+    "slides/slide-70-dashboard-stack-4.js"
   ]
 };

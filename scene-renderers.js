@@ -48,6 +48,26 @@ window.PREZI_SCENES = {
       `;
     }
 
+    if (obj.kind === 'token-burst') {
+      return `
+        <span class="json-token token-label">토큰</span>
+        <span class="json-token token-a">{</span>
+        <span class="json-token token-b">url</span>
+        <span class="json-token token-c">title</span>
+        <span class="json-token token-d">score</span>
+        <span class="json-token token-e">}</span>
+      `;
+    }
+
+    if (obj.kind === 'dashboard-window') {
+      return `
+        <div class="dashboard-window-frame">
+          <div class="dashboard-window-bar"><span></span><span></span><span></span></div>
+          <img src="${escapeHtml(obj.src)}" alt="${escapeHtml(obj.name || 'dashboard')}">
+        </div>
+      `;
+    }
+
     if (obj.kind === 'request') {
       const url = escapeHtml(obj.url);
       const method = escapeHtml(obj.method || 'GET');
