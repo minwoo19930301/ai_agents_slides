@@ -90,20 +90,7 @@ window.PREZI_SCENES = {
             </svg>
           </span>
           <span class="key3d">
-            <svg viewBox="0 0 120 190" aria-hidden="true">
-              <defs>
-                <linearGradient id="keyFace" x1="0" x2="1">
-                  <stop offset="0" stop-color="#020617"/>
-                  <stop offset=".46" stop-color="#111827"/>
-                  <stop offset=".58" stop-color="#6b7280"/>
-                  <stop offset="1" stop-color="#020617"/>
-                </linearGradient>
-              </defs>
-              <path d="M58 4c28 0 50 22 50 50 0 21-13 39-31 46v82H47V100C29 93 16 75 16 54 16 26 38 4 58 4Z" fill="url(#keyFace)"/>
-              <circle cx="75" cy="28" r="13" fill="#fff"/>
-              <path d="M46 94h23v24H46zm23 30h22v16H69zm0 26h16v16H69z" fill="#020617"/>
-              <path d="M53 100h5v74" stroke="#6b7280" stroke-width="4" opacity=".55"/>
-            </svg>
+            <img src="assets/chatgpt-key.png" alt="">
           </span>
           <span class="json-spin-label token-label-3d">TOKEN</span>
           <span class="json-spin-label key-label-3d">KEY</span>
@@ -135,7 +122,12 @@ window.PREZI_SCENES = {
       const path = escapeHtml(obj.path || '/');
       const longUrlClass = obj.url.length > 38 ? ' long-url' : '';
       return `
-        <div class="typing-url${longUrlClass}" style="--chars:${obj.url.length}">${url}</div>
+        <div class="api-url-window">
+          <span class="api-window-dot dot-red"></span>
+          <span class="api-window-dot dot-yellow"></span>
+          <span class="api-window-dot dot-green"></span>
+          <div class="typing-url${longUrlClass}" style="--chars:${obj.url.length}">${url}</div>
+        </div>
         <div class="http-chip">${method} ${path}</div>
       `;
     }
@@ -144,6 +136,12 @@ window.PREZI_SCENES = {
       const domain = escapeHtml(obj.domain || obj.url || '');
       const ip = escapeHtml(obj.ip);
       return `
+        <div class="dns-cloud-card">
+          <span class="dns-cloud-bubble b1"></span>
+          <span class="dns-cloud-bubble b2"></span>
+          <span class="dns-cloud-bubble b3"></span>
+          <strong>DNS</strong>
+        </div>
         <div class="dns-domain">${domain}</div>
         <div class="dns-ip">${ip}</div>
       `;

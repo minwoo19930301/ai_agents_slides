@@ -24,7 +24,8 @@ window.PREZI_MORPH_SLIDES[16] = {
       "z": 2,
       "domain": "www.reddit.com",
       "ip": "203.0.113.42:443",
-      "label": "DNS"
+      "label": "DNS",
+      "exitImmediate": true
     }
   ]
 };

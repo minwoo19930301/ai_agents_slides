@@ -25,7 +25,8 @@ window.PREZI_MORPH_SLIDES[15] = {
       "url": "https://www.reddit.com/r/technology.json",
       "method": "GET",
       "path": "/r/technology.json",
-      "label": "JSON Request"
+      "label": "JSON Request",
+      "exitImmediate": true
     }
   ]
 };

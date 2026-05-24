@@ -26,7 +26,8 @@ window.PREZI_MORPH_SLIDES[18] = {
       "focusY": 0.5,
       "focusW": 0.075,
       "focusH": 0.14,
-      "travel": "left"
+      "travel": "left",
+      "exitImmediate": true
     }
   ]
 };

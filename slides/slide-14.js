@@ -23,7 +23,8 @@ window.PREZI_MORPH_SLIDES[17] = {
       "h": 1,
       "z": 2,
       "query": "SELECT json_payload\nFROM api_cache\nWHERE path = '/r/technology.json';",
-      "label": "SQL"
+      "label": "SQL",
+      "exitImmediate": true
     }
   ]
 };
