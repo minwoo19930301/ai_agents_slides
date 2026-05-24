@@ -337,6 +337,21 @@ window.PREZI_SCENES = {
       `;
     }
 
+    if (obj.kind === 'claude-download-click') {
+      return `
+        <span class="claude-click-ring"></span>
+        <span class="claude-click-cursor"></span>
+      `;
+    }
+
+    if (obj.kind === 'claude-download-popup') {
+      return `
+        <div class="claude-popup-window">
+          <img src="assets/download_claude.png" alt="">
+        </div>
+      `;
+    }
+
     if (obj.kind === 'html-result') {
       const url = escapeHtml(obj.url);
       const label = escapeHtml(obj.label || 'HTML response');

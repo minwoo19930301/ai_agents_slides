@@ -81,6 +81,8 @@ body { display: grid; place-items: center; }
 .video-pair-scene,
 .afk-morph-scene,
 .afk-command-flow-scene,
+.claude-download-click-scene,
+.claude-download-popup-scene,
 .multi-hotlink-scene {
   background: transparent;
   overflow: visible;
@@ -112,7 +114,9 @@ body { display: grid; place-items: center; }
 .overall-services-cover-scene,
 .video-pair-scene,
 .afk-morph-scene,
-.afk-command-flow-scene {
+.afk-command-flow-scene,
+.claude-download-click-scene,
+.claude-download-popup-scene {
   pointer-events: none;
 }
 .hotlink-scene,
@@ -1638,6 +1642,62 @@ body { display: grid; place-items: center; }
   10% { opacity: .9; }
   82% { opacity: .9; }
   100% { left: 61.3%; opacity: 0; transform: scale(1); }
+}
+.claude-download-click-scene {
+  overflow: hidden;
+}
+.claude-click-ring {
+  position: absolute;
+  left: 13.9%;
+  top: 57.1%;
+  width: 3.2%;
+  aspect-ratio: 1;
+  border: 3px solid rgba(25, 84, 210, .72);
+  border-radius: 999px;
+  opacity: 0;
+  animation: claude-click-ring 1100ms ease-out 360ms infinite;
+}
+.claude-click-cursor {
+  position: absolute;
+  left: 17.9%;
+  top: 60.6%;
+  width: 0;
+  height: 0;
+  border-left: 1.25vw solid #111827;
+  border-top: .86vw solid transparent;
+  border-bottom: .86vw solid transparent;
+  filter: drop-shadow(0 5px 8px rgba(15, 23, 42, .22));
+  transform: rotate(-28deg);
+  animation: claude-cursor-tap 1400ms var(--ease) 180ms infinite;
+}
+.claude-popup-window {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(18.3% 1.7% 14.7% 41.2% round 10px);
+  filter: drop-shadow(0 22px 34px rgba(15, 23, 42, .18));
+  transform-origin: 70% 43%;
+  animation: claude-popup-in 760ms var(--ease) both;
+}
+.claude-popup-window img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+@keyframes claude-click-ring {
+  0% { opacity: 0; transform: scale(.45); }
+  24% { opacity: .8; }
+  100% { opacity: 0; transform: scale(1.85); }
+}
+@keyframes claude-cursor-tap {
+  0%, 100% { opacity: .92; transform: translate(0, 0) rotate(-28deg) scale(1); }
+  42% { opacity: 1; transform: translate(-8px, -7px) rotate(-28deg) scale(1); }
+  55% { opacity: 1; transform: translate(-11px, -10px) rotate(-28deg) scale(.9); }
+  70% { opacity: .92; transform: translate(-5px, -4px) rotate(-28deg) scale(1); }
+}
+@keyframes claude-popup-in {
+  0% { opacity: 0; transform: scale(.82) translateY(4%); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 .iframe-bar {
   display: flex;
