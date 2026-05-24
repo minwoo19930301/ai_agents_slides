@@ -12,6 +12,16 @@ window.PREZI_MORPH_SLIDES[57] = {
       "w": 1,
       "h": 1,
       "z": 1
+    },
+    {
+      "key": "!!use_computer_enable",
+      "kind": "use-computer-enable",
+      "name": "Enable Computer Use",
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1,
+      "z": 2
     }
   ]
 };

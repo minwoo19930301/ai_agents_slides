@@ -79,6 +79,7 @@ body { display: grid; place-items: center; }
 .overall-services-mask-scene,
 .overall-services-cover-scene,
 .video-pair-scene,
+.use-computer-enable-scene,
 .afk-morph-scene,
 .afk-command-flow-scene,
 .claude-download-click-scene,
@@ -113,6 +114,7 @@ body { display: grid; place-items: center; }
 .overall-services-mask-scene,
 .overall-services-cover-scene,
 .video-pair-scene,
+.use-computer-enable-scene,
 .afk-morph-scene,
 .afk-command-flow-scene,
 .claude-download-click-scene,
@@ -1481,6 +1483,88 @@ body { display: grid; place-items: center; }
 @keyframes video-card-in-right {
   from { opacity: 0; transform: translateX(24px) scale(.98); }
   to { opacity: 1; transform: translateX(0) scale(1); }
+}
+.use-computer-enable-scene {
+  overflow: hidden;
+}
+.use-computer-toast-cover {
+  position: absolute;
+  left: 41.1%;
+  width: 18.8%;
+  height: 5.25%;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 0 2px #fff;
+  animation: use-computer-toast-reveal 560ms ease 980ms both;
+}
+.use-computer-toast-cover.toast-one { top: 15.2%; }
+.use-computer-toast-cover.toast-two { top: 21.8%; animation-delay: 1120ms; }
+.use-computer-off-switch {
+  position: absolute;
+  left: 78.37%;
+  top: 55.14%;
+  width: 2.95%;
+  height: 2.9%;
+  border-radius: 999px;
+  background: #e5e7eb;
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, .7), 0 0 0 7px #fff;
+  animation: use-computer-switch-away 420ms ease 860ms both;
+}
+.use-computer-off-switch::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 9%;
+  width: 42%;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, .22);
+}
+.use-computer-click-ring {
+  position: absolute;
+  left: 78.2%;
+  top: 54.75%;
+  width: 3.25%;
+  aspect-ratio: 1;
+  border: 3px solid rgba(47, 100, 214, .65);
+  border-radius: 999px;
+  opacity: 0;
+  animation: use-computer-click-ring 800ms ease-out 520ms both;
+}
+.use-computer-cursor {
+  position: absolute;
+  left: 80.45%;
+  top: 57.35%;
+  width: 0;
+  height: 0;
+  border-left: 1.15vw solid #111827;
+  border-top: .78vw solid transparent;
+  border-bottom: .78vw solid transparent;
+  filter: drop-shadow(0 5px 8px rgba(15, 23, 42, .2));
+  transform: rotate(-30deg);
+  animation: use-computer-cursor-tap 1500ms var(--ease) 120ms both;
+}
+@keyframes use-computer-toast-reveal {
+  0%, 78% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes use-computer-switch-away {
+  0%, 62% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes use-computer-click-ring {
+  0% { opacity: 0; transform: scale(.45); }
+  24% { opacity: .8; }
+  100% { opacity: 0; transform: scale(1.85); }
+}
+@keyframes use-computer-cursor-tap {
+  0% { opacity: 0; transform: translate(18px, 14px) rotate(-30deg) scale(1); }
+  22% { opacity: .95; }
+  46% { opacity: 1; transform: translate(0, 0) rotate(-30deg) scale(1); }
+  56% { opacity: 1; transform: translate(-5px, -5px) rotate(-30deg) scale(.9); }
+  72% { opacity: .92; transform: translate(2px, 2px) rotate(-30deg) scale(1); }
+  100% { opacity: 0; transform: translate(10px, 10px) rotate(-30deg) scale(1); }
 }
 .afk-morph-scene {
   background: #fff;

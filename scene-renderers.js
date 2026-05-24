@@ -311,6 +311,16 @@ window.PREZI_SCENES = {
       `;
     }
 
+    if (obj.kind === 'use-computer-enable') {
+      return `
+        <span class="use-computer-toast-cover toast-one"></span>
+        <span class="use-computer-toast-cover toast-two"></span>
+        <span class="use-computer-off-switch"></span>
+        <span class="use-computer-click-ring"></span>
+        <span class="use-computer-cursor"></span>
+      `;
+    }
+
     if (obj.kind === 'afk-morph') {
       return `
         <div class="afk-stage" aria-label="AFK, Away From Keyboard">
