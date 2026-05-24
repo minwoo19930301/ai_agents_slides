@@ -3,17 +3,14 @@ window.PREZI_MORPH_SLIDES[80] = {
   "index": 81,
   "objects": [
     {
-      "key": "!!stocks_repo_cover",
-      "kind": "repo-cover",
-      "name": "Stocks repo cover",
+      "key": "!!stocks_image",
+      "src": "assets/stocks.png",
+      "name": "Stocks",
       "x": 0,
       "y": 0,
       "w": 1,
       "h": 1,
-      "z": 1,
-      "kicker": "GitHub",
-      "title": "stocks",
-      "subtitle": "auto-stock-trader-kr"
+      "z": 1
     },
     {
       "key": "!!stocks_repo_link",
