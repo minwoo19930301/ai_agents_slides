@@ -6,13 +6,14 @@ const manifest = window.PREZI_MORPH_DATA;
 const slideFiles = manifest.slideFiles;
 const slideCount = slideFiles.length;
 const duration = 1000;
-const assetVersion = '20260524-use-computer-enable';
+const assetVersion = '20260524-section-preload';
 const autoAdvanceMap = new Map([
   [2, 3],
   [4, 5],
 ]);
 const slideCache = new Map();
 const slideLoads = new Map();
+const assetPreloads = new Set();
 let index = 0;
 let locked = false;
 let autoTimer = null;
@@ -52,11 +53,47 @@ async function loadSlide(slideIndex) {
 
 function preloadSlide(slideIndex) {
   if (slideIndex < 0 || slideIndex >= slideCount) return;
-  loadSlide(slideIndex).catch((error) => console.warn(error));
+  loadSlide(slideIndex)
+    .then((slide) => preloadSlideAssets(slide))
+    .catch((error) => console.warn(error));
+}
+
+function preloadAsset(src) {
+  if (!src || assetPreloads.has(src)) return;
+  assetPreloads.add(src);
+
+  if (/\.(mov|mp4|webm)(\?|$)/i.test(src)) {
+    const video = document.createElement('video');
+    video.preload = 'auto';
+    video.muted = true;
+    video.src = src;
+    video.load();
+    return;
+  }
+
+  const image = new Image();
+  image.decoding = 'async';
+  image.src = src;
+}
+
+function preloadSlideAssets(slide) {
+  slide.objects.forEach((obj) => {
+    if (obj.src) preloadAsset(obj.src);
+    if (!obj.kind || !window.PREZI_SCENES) return;
+
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = window.PREZI_SCENES.markup(obj);
+    wrapper.querySelectorAll('img[src], video[src]').forEach((node) => {
+      preloadAsset(node.getAttribute('src'));
+    });
+  });
 }
 
 function preloadAround(slideIndex) {
+  preloadSlide(slideIndex);
   preloadSlide(slideIndex + 1);
+  preloadSlide(slideIndex + 2);
+  preloadSlide(slideIndex + 3);
   preloadSlide(slideIndex - 1);
   const autoNext = autoAdvanceMap.get(slideIndex);
   if (autoNext !== undefined) preloadSlide(autoNext);

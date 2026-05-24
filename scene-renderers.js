@@ -7,6 +7,47 @@ window.PREZI_SCENES = {
       .replaceAll('"', '&quot;')
       .replaceAll("'", '&#39;');
 
+    if (obj.kind === 'lesson-opening') {
+      const title = escapeHtml(obj.title || '');
+      const items = (obj.items || []).map((item, index) => `
+        <li style="--delay:${260 + index * 180}ms">
+          <span>${String(index + 1).padStart(2, '0')}</span>
+          <strong>${escapeHtml(item)}</strong>
+        </li>
+      `).join('');
+      return `
+        <section class="lesson-opening-scene">
+          <p class="lesson-kicker">AI Agents Slides</p>
+          <h1>${title}</h1>
+          <ul>${items}</ul>
+        </section>
+      `;
+    }
+
+    if (obj.kind === 'lesson-agenda') {
+      const rows = (obj.items || []).map((item, index) => `
+        <li style="--delay:${180 + index * 150}ms">
+          <span>${escapeHtml(item[0])}</span>
+          <strong>${escapeHtml(item[1])}</strong>
+        </li>
+      `).join('');
+      return `
+        <section class="lesson-agenda-scene">
+          <p class="lesson-kicker">목차</p>
+          <ol>${rows}</ol>
+        </section>
+      `;
+    }
+
+    if (obj.kind === 'section-divider') {
+      return `
+        <section class="section-divider-scene">
+          <span>${escapeHtml(obj.label || '')}</span>
+          <h1>${escapeHtml(obj.title || '')}</h1>
+        </section>
+      `;
+    }
+
     if (obj.kind === 'request') {
       const url = escapeHtml(obj.url);
       const method = escapeHtml(obj.method || 'GET');
@@ -276,6 +317,17 @@ window.PREZI_SCENES = {
       `;
     }
 
+    if (obj.kind === 'openclaw-dollar-burst') {
+      return `
+        <span class="openclaw-dollar dollar-a">$</span>
+        <span class="openclaw-dollar dollar-b">$</span>
+        <span class="openclaw-dollar dollar-c">$</span>
+        <span class="openclaw-dollar dollar-d">$</span>
+        <span class="openclaw-dollar dollar-e">$</span>
+        <span class="openclaw-dollar dollar-f">$</span>
+      `;
+    }
+
     if (obj.kind === 'apps-data-flow') {
       return `
         <span class="apps-flow-dot apps-dot-1"></span>
@@ -335,9 +387,9 @@ window.PREZI_SCENES = {
 
     if (obj.kind === 'afk-command-flow') {
       return `
-        <span class="afk-command-bubble afk-blue afk-row-top"><b>명령:</b> OpenClaw 켜줘</span>
-        <span class="afk-command-bubble afk-green afk-row-mid"><b>명령:</b> 코드 작업 실행</span>
-        <span class="afk-command-bubble afk-orange afk-row-bottom"><b>명령:</b> 데스크톱 제어</span>
+        <span class="afk-command-bubble afk-blue afk-row-top"><b>명령:</b> 오늘 날씨 알려줘</span>
+        <span class="afk-command-bubble afk-green afk-row-mid"><b>명령:</b> 내 네이버 메일에서 스팸 좀 정리해줘 </span>
+        <span class="afk-command-bubble afk-orange afk-row-bottom"><b>명령:</b> 내 컴퓨터에 있는 대본.txt 보고 PPT 좀 만들어주라</span>
         <span class="afk-signal afk-blue afk-leg-a afk-row-top"></span>
         <span class="afk-signal afk-blue afk-leg-b afk-row-top"></span>
         <span class="afk-signal afk-green afk-leg-a afk-row-mid"></span>

@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[1] = {
-  "index": 2,
+window.PREZI_MORPH_SLIDES[4] = {
+  "index": 5,
   "objects": [
     {
       "key": "!!canvas",
