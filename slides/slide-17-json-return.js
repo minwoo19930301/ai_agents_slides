@@ -3,6 +3,17 @@ window.PREZI_MORPH_SLIDES[19] = {
   "index": 20,
   "objects": [
     {
+      "key": "!!canvas",
+      "name": "!!canvas",
+      "descr": "tech_architecture_flow_diagram_illustration.png",
+      "src": "assets/image1.png",
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1,
+      "z": 0
+    },
+    {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
       "descr": "JSON response returning to bot client",

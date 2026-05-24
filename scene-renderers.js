@@ -50,15 +50,16 @@ window.PREZI_SCENES = {
 
     if (obj.kind === 'token-burst') {
       return `
-        <div class="json-orbit">
-          <span class="json-coin"><span>1</span></span>
-          <span class="json-key">
-            <i class="key-ring"></i>
-            <i class="key-stem"></i>
-            <i class="key-tooth key-tooth-a"></i>
-            <i class="key-tooth key-tooth-b"></i>
+        <div class="json-spin-stage">
+          <span class="token3d-coin"><span>1</span></span>
+          <span class="key3d">
+            <i class="key3d-ring"></i>
+            <i class="key3d-stem"></i>
+            <i class="key3d-tooth key3d-tooth-a"></i>
+            <i class="key3d-tooth key3d-tooth-b"></i>
           </span>
-          <span class="json-orbit-label">TOKEN / KEY</span>
+          <span class="json-spin-label token-label-3d">TOKEN</span>
+          <span class="json-spin-label key-label-3d">KEY</span>
         </div>
       `;
     }
