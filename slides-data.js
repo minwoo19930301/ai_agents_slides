@@ -72,6 +72,8 @@ window.PREZI_MORPH_DATA = {
     "slides/slide-60-chatgpt-ex.js",
     "slides/slide-61-codex-ex.js",
     "slides/slide-62-codex-ex2.js",
+    "slides/slide-63-instructions.js",
+    "slides/slide-64-codex-qwen.js",
     "slides/slide-00-section-gyeol.js",
     "slides/slide-47-openclaw-heartbeats.js",
     "slides/slide-63-no-cli-api-mcp.js",

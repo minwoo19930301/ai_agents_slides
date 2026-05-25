@@ -1,6 +1,6 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[69] = {
-  "index": 70,
+window.PREZI_MORPH_SLIDES[71] = {
+  "index": 72,
   "objects": [
     {
       "key": "!!openclaw_heartbeats",

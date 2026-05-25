@@ -1,11 +1,11 @@
 window.PREZI_MORPH_SLIDES = window.PREZI_MORPH_SLIDES || {};
-window.PREZI_MORPH_SLIDES[72] = {
-  "index": 73,
+window.PREZI_MORPH_SLIDES[69] = {
+  "index": 70,
   "objects": [
     {
-      "key": "!!no_cli_api_mcp",
-      "src": "assets/no_cli_api_mcp.png",
-      "name": "No CLI API MCP",
+      "key": "!!codex_qwen_scene",
+      "src": "assets/codex_qwen.png",
+      "name": "Codex Qwen routing",
       "x": 0,
       "y": 0,
       "w": 1,
