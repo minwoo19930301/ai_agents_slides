@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[18] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "API bot DB result illustration",
-      "src": "assets/image_bot.png",
+      "descr": "DB result returning to server",
+      "src": "assets/res_db_return.png",
       "x": 0,
       "y": 0,
       "w": 1,
@@ -26,8 +26,7 @@ window.PREZI_MORPH_SLIDES[18] = {
       "focusY": 0.5,
       "focusW": 0.075,
       "focusH": 0.14,
-      "travel": "left",
-      "exitImmediate": true
+      "travel": "left"
     }
   ]
 };

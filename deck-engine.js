@@ -6,7 +6,7 @@ const manifest = window.PREZI_MORPH_DATA;
 const slideFiles = manifest.slideFiles;
 const slideCount = slideFiles.length;
 const duration = 1000;
-const assetVersion = '20260525-reuse-dns-brain-zoom';
+const assetVersion = '20260525-partial-rollback-api-web';
 const autoAdvanceMap = new Map([
   [2, 3],
   [4, 5],
@@ -217,14 +217,9 @@ async function transitionTo(nextIndex, options = {}) {
         } else {
           const oldEl = existing.el;
           const exitFrame = fromObj.exitTo || toObj;
-          if (fromObj.exitImmediate) {
-            oldEl.remove();
-          } else {
-            oldEl.style.zIndex = String(Math.max(fromObj.z, toObj.z));
-            oldEl.style.transform = frameToTransform(exitFrame);
-            oldEl.style.opacity = '0';
-            setTimeout(() => oldEl.remove(), duration + 80);
-          }
+          oldEl.style.zIndex = String(Math.max(fromObj.z, toObj.z));
+          oldEl.style.transform = frameToTransform(exitFrame);
+          oldEl.style.opacity = '0';
 
           const enterFrame = toObj.enterFrom || fromObj;
           const newEl = makeElement(toObj, enterFrame, 0);
@@ -233,16 +228,13 @@ async function transitionTo(nextIndex, options = {}) {
             newEl.style.transform = frameToTransform(toObj);
             newEl.style.opacity = '1';
           });
+          setTimeout(() => oldEl.remove(), duration + 80);
           nextElements.set(key, { obj: toObj, el: newEl });
         }
         return;
       }
 
       if (fromObj && existing && !toObj) {
-        if (fromObj.exitImmediate) {
-          existing.el.remove();
-          return;
-        }
         const exitFrame = fromObj.exitTo || fromObj;
         existing.el.style.transform = frameToTransform(exitFrame);
         existing.el.style.opacity = '0';

@@ -14,17 +14,6 @@ window.PREZI_MORPH_SLIDES[22] = {
       "z": 1
     },
     {
-      "key": "!!brain_cutout",
-      "name": "!!brain_cutout",
-      "descr": "AI brain cutout",
-      "src": "assets/brain-cutout.png",
-      "x": 0.632,
-      "y": 0.292,
-      "w": 0.25,
-      "h": 0.4,
-      "z": 2
-    },
-    {
       "key": "!!download_links",
       "kind": "multi-hotlink",
       "name": "Open download links",

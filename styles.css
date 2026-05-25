@@ -494,19 +494,16 @@ body { display: grid; place-items: center; }
   animation: token-self-spin 1150ms linear infinite;
 }
 .key3d {
-  left: 41%;
-  top: -38%;
-  width: 22%;
+  right: 10%;
+  top: 4%;
+  width: 28%;
   animation: key-self-spin 1250ms linear infinite;
 }
 .token3d-coin svg,
-.key3d img {
+.key3d svg {
   display: block;
   width: 100%;
   height: auto;
-}
-.key3d img {
-  mix-blend-mode: normal;
 }
 .json-spin-label {
   position: absolute;
@@ -518,12 +515,7 @@ body { display: grid; place-items: center; }
   letter-spacing: 0;
 }
 .token-label-3d { left: 6%; }
-.key-label-3d {
-  left: 40%;
-  right: auto;
-  top: 1%;
-  bottom: auto;
-}
+.key-label-3d { right: 15%; }
 @keyframes token-self-spin {
   0% { transform: rotateY(0deg) rotateX(3deg); }
   25% { transform: rotateY(90deg) rotateX(3deg) scaleX(.62); }
@@ -606,33 +598,6 @@ body { display: grid; place-items: center; }
   50%, 100% { opacity: 1; }
 }
 .web-board { position: relative; width: 100%; height: 100%; }
-.api-url-window {
-  position: absolute;
-  left: 10.5%;
-  top: 14.8%;
-  width: 28.5%;
-  height: 9.4%;
-  border: 2px solid rgba(75, 123, 238, .68);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, .88);
-  box-shadow:
-    0 12px 30px rgba(42, 95, 221, .18),
-    0 0 0 8px rgba(64, 116, 236, .08);
-  opacity: 0;
-  transform: translateY(-10px) scale(.98);
-  animation: fade-rise 520ms var(--ease) 120ms both;
-}
-.api-window-dot {
-  position: absolute;
-  top: 16%;
-  width: 2.8%;
-  aspect-ratio: 1;
-  border-radius: 999px;
-  background: #8fb2ff;
-}
-.api-window-dot.dot-red { left: 4.2%; background: #5b8bff; }
-.api-window-dot.dot-yellow { left: 8%; background: #9fd0ff; }
-.api-window-dot.dot-green { left: 11.8%; background: #8fd4b6; }
 .typing-url {
   position: absolute;
   left: 11.3%;
@@ -649,12 +614,6 @@ body { display: grid; place-items: center; }
   animation:
     type-url 1150ms steps(var(--chars)) 180ms both,
     caret-blink 720ms step-end infinite;
-}
-.api-url-window .typing-url {
-  left: 6.8%;
-  top: 47%;
-  width: 87%;
-  font-size: clamp(8px, .72vw, 12px);
 }
 .typing-url.long-url {
   font-size: clamp(7px, .68vw, 10px);
@@ -692,24 +651,13 @@ body { display: grid; place-items: center; }
   opacity: 0;
   animation: fade-rise 520ms var(--ease) both;
 }
-.dns-cloud-card {
-  position: absolute;
-  left: 34.2%;
-  top: 28.8%;
-  width: 11.8%;
-  height: auto;
-  filter: drop-shadow(0 14px 22px rgba(38, 95, 218, .18));
-  opacity: 0;
-  transform: translateY(8px) scale(.96);
-  animation: fade-rise 560ms var(--ease) 120ms both;
-}
 .dns-domain {
-  top: 45.4%;
+  top: 35.7%;
   font-size: clamp(13px, 1.15vw, 18px);
   animation-delay: 220ms;
 }
 .dns-ip {
-  top: 53.2%;
+  top: 49.4%;
   font-size: clamp(11px, .95vw, 15px);
   animation-delay: 650ms;
 }

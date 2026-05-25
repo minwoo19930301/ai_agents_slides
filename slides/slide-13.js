@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[16] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "API bot DNS illustration",
-      "src": "assets/image_bot.png",
+      "descr": "DNS resolution illustration",
+      "src": "assets/res_dns.png",
       "x": 0,
       "y": 0,
       "w": 1,
@@ -24,8 +24,7 @@ window.PREZI_MORPH_SLIDES[16] = {
       "z": 2,
       "domain": "www.reddit.com",
       "ip": "203.0.113.42:443",
-      "label": "DNS",
-      "exitImmediate": true
+      "label": "DNS"
     }
   ]
 };

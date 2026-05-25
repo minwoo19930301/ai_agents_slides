@@ -37,8 +37,7 @@ window.PREZI_MORPH_SLIDES[19] = {
       "focusY": 0.54,
       "focusW": 0.105,
       "focusH": 0.2,
-      "travel": "left",
-      "exitImmediate": true
+      "travel": "left"
     },
     {
       "key": "!!json_tokens",
@@ -48,8 +47,7 @@ window.PREZI_MORPH_SLIDES[19] = {
       "y": 0,
       "w": 1,
       "h": 1,
-      "z": 4,
-      "exitImmediate": true
+      "z": 4
     },
     {
       "key": "!!json_link_client",

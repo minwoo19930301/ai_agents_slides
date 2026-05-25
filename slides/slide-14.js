@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[17] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "API bot SQL illustration",
-      "src": "assets/image_bot.png",
+      "descr": "SQL request illustration",
+      "src": "assets/res_sql.png",
       "x": 0,
       "y": 0,
       "w": 1,
@@ -23,8 +23,7 @@ window.PREZI_MORPH_SLIDES[17] = {
       "h": 1,
       "z": 2,
       "query": "SELECT json_payload\nFROM api_cache\nWHERE path = '/r/technology.json';",
-      "label": "SQL",
-      "exitImmediate": true
+      "label": "SQL"
     }
   ]
 };

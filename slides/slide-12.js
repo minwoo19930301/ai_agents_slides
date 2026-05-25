@@ -5,8 +5,8 @@ window.PREZI_MORPH_SLIDES[15] = {
     {
       "key": "!!web_scene_image",
       "name": "!!web_scene_image",
-      "descr": "API bot request illustration",
-      "src": "assets/image_bot.png",
+      "descr": "JSON request illustration",
+      "src": "assets/res_html.png",
       "x": 0,
       "y": 0,
       "w": 1,
@@ -25,8 +25,7 @@ window.PREZI_MORPH_SLIDES[15] = {
       "url": "https://www.reddit.com/r/technology.json",
       "method": "GET",
       "path": "/r/technology.json",
-      "label": "JSON Request",
-      "exitImmediate": true
+      "label": "JSON Request"
     }
   ]
 };
