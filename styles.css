@@ -479,6 +479,12 @@ body { display: grid; place-items: center; }
   opacity: 0;
   animation: orbit-scene-in 520ms cubic-bezier(.18, .86, .22, 1) 140ms forwards;
 }
+.subscription-spin-stage {
+  left: 41.5%;
+  top: 52%;
+  width: 17%;
+  height: 22%;
+}
 .token3d-coin,
 .key3d {
   position: absolute;

@@ -40,16 +40,6 @@ window.PREZI_MORPH_SLIDES[19] = {
       "travel": "left"
     },
     {
-      "key": "!!json_tokens",
-      "kind": "token-burst",
-      "name": "JSON tokens",
-      "x": 0,
-      "y": 0,
-      "w": 1,
-      "h": 1,
-      "z": 4
-    },
-    {
       "key": "!!json_link_client",
       "kind": "hotlink",
       "name": "Open JSON response",

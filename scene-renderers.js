@@ -62,8 +62,9 @@ window.PREZI_SCENES = {
     }
 
     if (obj.kind === 'token-burst') {
+      const stageClass = obj.stageClass || '';
       return `
-        <div class="json-spin-stage">
+        <div class="json-spin-stage ${escapeHtml(stageClass)}">
           <span class="token3d-coin">
             <svg viewBox="0 0 160 160" aria-hidden="true">
               <defs>

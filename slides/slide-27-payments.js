@@ -24,6 +24,17 @@ window.PREZI_MORPH_SLIDES[28] = {
       "z": 4
     },
     {
+      "key": "!!subscription_tokens",
+      "kind": "token-burst",
+      "name": "Subscription token and API key",
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1,
+      "z": 5,
+      "stageClass": "subscription-spin-stage"
+    },
+    {
       "key": "!!pricing_link",
       "kind": "hotlink",
       "name": "Claude pricing",
